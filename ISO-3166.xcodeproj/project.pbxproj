@@ -21,6 +21,7 @@
 		067451F419378D4E00C5DEAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067451D619378D4D00C5DEAA /* UIKit.framework */; };
 		067451FC19378D4E00C5DEAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 067451FA19378D4E00C5DEAA /* InfoPlist.strings */; };
 		067451FE19378D4E00C5DEAA /* ISO_3166Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 067451FD19378D4E00C5DEAA /* ISO_3166Tests.m */; };
+		067452081937920C00C5DEAA /* allCountries.json in Resources */ = {isa = PBXBuildFile; fileRef = 067452071937920C00C5DEAA /* allCountries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		067451F919378D4E00C5DEAA /* ISO-3166Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISO-3166Tests-Info.plist"; sourceTree = "<group>"; };
 		067451FB19378D4E00C5DEAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		067451FD19378D4E00C5DEAA /* ISO_3166Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO_3166Tests.m; sourceTree = "<group>"; };
+		067452071937920C00C5DEAA /* allCountries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allCountries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				067451E419378D4E00C5DEAA /* Main.storyboard */,
 				067451E719378D4E00C5DEAA /* ViewController.h */,
 				067451E819378D4E00C5DEAA /* ViewController.m */,
+				067452071937920C00C5DEAA /* allCountries.json */,
 				067451EA19378D4E00C5DEAA /* Images.xcassets */,
 				067451D919378D4D00C5DEAA /* Supporting Files */,
 			);
@@ -230,6 +233,7 @@
 			files = (
 				067451EB19378D4E00C5DEAA /* Images.xcassets in Resources */,
 				067451DD19378D4D00C5DEAA /* InfoPlist.strings in Resources */,
+				067452081937920C00C5DEAA /* allCountries.json in Resources */,
 				067451E619378D4E00C5DEAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

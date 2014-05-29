@@ -14,10 +14,51 @@
 
 @implementation ViewController
 
+// https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.json
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+
+//    NSString *urlAsString = @"https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.json";
+//    NSURL *url = [[NSURL alloc] initWithString:urlAsString];
+//    NSLog(@"%@", urlAsString);
+//    
+//    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+//        
+//        if (error)
+//        {
+//            
+//        }
+//        else
+//        {
+//            NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+//            NSLog(@"array %@", array);
+//            
+//            for (NSDictionary *country in array)
+//            {
+//                NSLog(@"%@", [country objectForKey:@"name"]);
+//            }
+//            
+//            NSLog(@"array count %d", [array count]);
+//
+//        }
+//    }];
+    
+    
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"allCountries" ofType:@"json" ];
+    
+    NSData *data = [[NSFileManager defaultManager] contentsAtPath:filePath];
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    NSLog(@"array %@", array);
+    
+    for (NSDictionary *country in array)
+    {
+        NSLog(@"%@", [country objectForKey:@"name"]);
+    }
+    
+    NSLog(@"array count %d", [array count]);
 }
 
 - (void)didReceiveMemoryWarning
